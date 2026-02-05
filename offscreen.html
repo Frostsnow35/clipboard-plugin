@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Offscreen Clipboard Reader</title>
+    <style>
+      body { margin: 0; padding: 0; }
+      #paste-target { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; }
+    </style>
+    <script src="offscreen.js"></script>
+  </head>
+  <body>
+    <!-- 使用 contenteditable div 以更好地支持富文本和图片粘贴 -->
+    <div id="paste-target" contenteditable="true"></div>
+  </body>
+</html>
